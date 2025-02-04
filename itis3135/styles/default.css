@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #231f20;
+    margin: 0;
+    height: 100%;
+}
+
+.title-name {
+    color: white;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+header a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+header a:hover {
+    color: #B3A369;
+}
+
+footer a {
+    color: #B3A369;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+footer {
+    text-align: center;
+    color: #B3A369;
+}
+
+footer a:hover{
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.bullets {
+    text-align: left;
+}
+
+header {
+    background-color: #046A38;
+    padding: 20px 0;
+    width: 100%
+}
+
+main {
+    color: #B3A369;
+    font-family: karla, sans-serif;
+    text-align: center; 
+}
+
+main p {
+    font-family: karla, sans-serif;
+}
+
+
+.gold-line {
+    height: 5px;
+    background-color: #B3A369;
+}
+
+.centered-box {
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: left; 
+    border: 0; 
+}
+
+img {
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;  
+}
+
+.caption{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-style: italic;
+}
+
