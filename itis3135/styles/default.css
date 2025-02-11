@@ -6,13 +6,65 @@ body {
     height: 100%;
 }
 
-.title-name {
+.title-name, .business-name {
     color: white;
     font-family: Poppins, sans-serif;
     text-align: center;
     font-size: 1rem;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.logo{
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+
+.business-name {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .business-name {
+        font-size: 1.2rem;
+    }
+    .logo {
+        max-width: 80px;
+        margin-right: 10px;
+    }
+}   
+
+nav[class="kinginchworm"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; /* Add some top margin */
+    display: flex; /* Make list items horizontal */
+    justify-content: center; /* Center the list items */
+    color: white;
+}
+
+nav[class="kinginchworm"] li {
+    margin: 0 15px; /* Spacing between list items */
+}
+
+nav[class="kinginchworm"] a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none; /* Remove underlines from links */
+}
+
+nav[class="kinginchworm"] a:hover {
+    color: #B3A369;
+}
 
 header a {
     color: white;
@@ -88,3 +140,55 @@ img {
     font-style: italic;
 }
 
+.navbar ul {
+    flex-direction: column; /* Stack navigation vertically */
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex; /* Use flexbox for horizontal menu */
+    justify-content: center; /* Center the menu items */
+}
+
+@media (max-width: 768px) {
+    .navbar a {
+        text-align: center; /* Center text within links */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.navbar {
+    width: 100%; /* Make navbar full width */
+    background-color: hsl(0, 0%, 25%);
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: color 0.3s;
+    display: block; /* Important for vertical centering */
+    text-align: center;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #f0f3f5;
+    background-color: hsl(0, 0%, 10%);
+}
+
+.navbar ul, li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar a {
+    display: inline-block;
+    margin-right: 10px;
+}
