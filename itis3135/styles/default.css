@@ -194,3 +194,8 @@ img {
     display: inline-block;
     margin-right: 10px;
 }
+
+footer .responsive-web-design {
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+}   
