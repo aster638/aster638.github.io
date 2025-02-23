@@ -185,7 +185,7 @@ img {
     background-color: hsl(0, 0%, 10%);
 }
 
-.navbar ul, li {
+.navbar ul, .navbar li {
     display: inline-block;
     margin-right: 10px;
 }
@@ -198,4 +198,30 @@ img {
 footer .responsive-web-design {
     text-decoration: none;
     font-family:'Times New Roman', Times, serif;
-}   
+}
+
+footer .responsive-web-design:hover {
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section.left ul li {
+    display: list-item;
+    margin-left: 20px;
+    list-style-type: disc;
+    padding-bottom: 12px;
+}
+
+section.left {
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 25px;
+}
+
+.website {
+    color: white;
+}
+
+.website:hover {
+    color: #B3A369;
+}
