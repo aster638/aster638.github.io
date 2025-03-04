@@ -6,6 +6,20 @@ body {
     height: 100%;
 }
 
+/* Main container styles with responsive properties */
+main {
+    color: #B3A369;
+    font-family: karla, sans-serif;
+    text-align: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main p {
+    font-family: karla, sans-serif;
+}
+
 .title-name, .business-name {
     color: white;
     font-family: Poppins, sans-serif;
@@ -20,11 +34,10 @@ body {
     padding: 20px;
 }
 
-.logo{
+.logo {
     max-width: 150px;
     margin-right: 20px;
 }
-
 
 .business-name {
     color: white;
@@ -33,33 +46,23 @@ body {
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .business-name {
-        font-size: 1.2rem;
-    }
-    .logo {
-        max-width: 80px;
-        margin-right: 10px;
-    }
-}   
-
 nav[class="kinginchworm"] ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0; /* Add some top margin */
-    display: flex; /* Make list items horizontal */
-    justify-content: center; /* Center the list items */
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
     color: white;
 }
 
 nav[class="kinginchworm"] li {
-    margin: 0 15px; /* Spacing between list items */
+    margin: 0 15px;
 }
 
 nav[class="kinginchworm"] a {
     color: white;
     font-family: Helvetica, sans-serif;
-    text-decoration: none; /* Remove underlines from links */
+    text-decoration: none;
 }
 
 nav[class="kinginchworm"] a:hover {
@@ -78,15 +81,17 @@ header a:hover {
 footer a {
     color: #B3A369;
     font-family: Helvetica, sans-serif;
-    
 }
 
 footer {
     text-align: center;
     color: #B3A369;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 0;
 }
 
-footer a:hover{
+footer a:hover {
     color: white;
     font-family: Helvetica, sans-serif;
 }
@@ -100,19 +105,7 @@ header {
     padding-top: 20px;
     padding-left: 0;
     width: 100%;
-
 }
-
-main {
-    color: #B3A369;
-    font-family: karla, sans-serif;
-    text-align: center; 
-}
-
-main p {
-    font-family: karla, sans-serif;
-}
-
 
 .gold-line {
     height: 5px;
@@ -120,10 +113,10 @@ main p {
 }
 
 .centered-box {
-    width: 80%; 
-    margin: 0 auto; 
-    text-align: left; 
-    border: 0; 
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    border: 0;
 }
 
 img {
@@ -132,50 +125,37 @@ img {
     height: auto;
     display: flex;
     align-items: center;
-    border-radius: 15px;  
+    border-radius: 15px;
+    max-width: 100%;
 }
 
-.caption{
+.caption {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-style: italic;
 }
 
+.navbar {
+    width: 100%;
+    background-color: hsl(0, 0%, 25%);
+}
+
 .navbar ul {
-    flex-direction: column; /* Stack navigation vertically */
-    align-items: center;
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    display: flex; /* Use flexbox for horizontal menu */
-    justify-content: center; /* Center the menu items */
 }
-
-@media (max-width: 768px) {
-    .navbar a {
-        text-align: center; /* Center text within links */
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.navbar {
-    width: 100%; /* Make navbar full width */
-    background-color: hsl(0, 0%, 25%);
-}
-
 
 .navbar a {
     color: white;
     text-decoration: none;
     padding: 15px;
     transition: color 0.3s;
-    display: block; /* Important for vertical centering */
+    display: block;
     text-align: center;
 }
 
@@ -224,4 +204,135 @@ section.left {
 
 .website:hover {
     color: #B3A369;
+}
+
+/* Media Queries for Desktop, Tablet, and Mobile */
+
+/* Desktop (larger screens) */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    /* Desktop specific styles - using default styles with minor adjustments if needed */
+    main {
+        max-width: 1200px;
+    }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 95%;
+        max-width: 900px;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .centered-box {
+        width: 95%;
+    }
+    
+    section.left {
+        padding-left: 5%;
+    }
+    
+    .navbar ul {
+        flex-wrap: wrap;
+    }
+    
+    .navbar a {
+        padding: 10px;
+    }
+    
+    img {
+        width: 180px;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    main {
+        width: 95%;
+        max-width: none;
+    }
+    
+    .business-name {
+        font-size: 1.2rem;
+    }
+    
+    .logo {
+        max-width: 80px;
+        margin-right: 10px;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav[class="kinginchworm"] ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav[class="kinginchworm"] li {
+        margin: 5px 0;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+    }
+    
+    .navbar li {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        margin: 0;
+    }
+    
+    .centered-box {
+        width: 100%;
+    }
+    
+    section.left {
+        padding-left: 15px;
+    }
+    
+    img {
+        width: 150px;
+    }
+}
+
+/* Very small devices (smaller than specified mobile range) */
+@media screen and (max-width: 369px) {
+    /* Adding this to handle very small screens as well */
+    main {
+        width: 98%;
+    }
+    
+    .header-container {
+        padding: 5px;
+    }
+    
+    .logo {
+        max-width: 60px;
+    }
+    
+    .business-name {
+        font-size: 1rem;
+    }
+    
+    .navbar a {
+        padding: 8px 0;
+    }
 }
