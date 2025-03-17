@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <title>My Hobby Sport</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Karla:ital,wght@0,200..800;1,200..800&family=Lilita+One&family=Luckiest+Guy&family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        html{
+            font-family: 'Didact Gothic', 'Courier New';
+            background-color: #343434;
+            color:white;
+            
+        }
+        header{
+            background-color: #EF0107;
+            color: white;
+            text-align: center;
+            padding-bottom: 10px;
+            padding-top:5px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+
+        nav {
+            gap: 10px; 
+        }
+        nav span {
+            display: inline-block;
+            padding: 0 10px;
+            border-right: 1px solid black;
+        }
+        nav span:last-child {
+        border-right: none;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: #EF0107;
+            display: none;
+            padding: 20px;
+            padding: 15px;
+        }
+        .active {
+            display: block;
+        }
+        footer{
+            background-color: #EF0107;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        h2{
+            text-align: left;
+        }
+        img {
+            max-width: 50vw;
+            max-height: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+        figure{
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+
+
+    </style>
+
+        <script>
+            document.getElementById("validation-link-html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-link-css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="script.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <h1>Hobby</h1>
+        <p><i></i></p>
+        <nav>
+            <span><a onclick="showSection('home')">Home</a></span>
+            <span><a onclick="showSection('about')">About Soccer</a></span>
+            <span><a onclick="showSection('when')">When</a></span>
+            <span><a onclick="showSection('where')">Where do I Play</a></span>
+            <span><a onclick="showSection('how')">What You Need to Play</a></span>
+            <span><a onclick="showSection('why')">Why You Should Play</a></span>     
+        </nav>
+        
+    </header>
+
+    <section id="home" class="active">
+        <h2>Welcome to my Hobby Page! (What)</h2>
+        <p>
+            Soccer is a game played by two teams of eleven players each, in which an inflated ball is propelled across a field. Each team attempts to guide the ball into the opposing side's goal before it can be intercepted. A team is permitted to touch the ball three times in succession before passing or shooting, although typically only with the feet, head, or chest. The challenge lies in the precise control required for these brief contacts, which forms a captivating aspect of the sport. 
+        </p>
+
+        <figure>
+            <img src="images/designer.jpeg" alt="stock soccer shoes image">
+            <figcaption><i>soccer shoes</i></figcaption>
+        </figure>
+        <p>
+            Adidas is one of the most famous soccer ball brands. It's even used in professional settings like the FIFA (Fédération Internationale de Football Association) World Cup. Personally, this is my preferred brand as the ball is incredibly aerodynamic and has a textured surface, allowing for precise control and the generation of significant curve.
+        </p>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            Soccer is a hobby I've been passionate about since I was 11 years old. It began with a simple love for the game, fueled by watching countless matches and playing with friends. Even with the demands of school and other commitments, I make sure to play soccer at least once a week, keeping that lifelong connection to the sport alive.
+        </p>
+        <figure>
+            <img src="images/arsenal.jpeg" alt="Person playing Soccer">
+            <figcaption><i>Image of a person playing soccer in an Arsenal kit</i></figcaption>
+        </figure>
+        <p>  
+            When I first started playing soccer at 11, I was hesitant because I felt I wasn't very good. However, my friends finally persuaded me to join a local youth league that had practices and games every weekend. Needless to say, I was hooked. Because we only had those games and practices, I always looked forward to them, eagerly anticipating each opportunity to get out on the field.
+        </p>
+    </section>
+    <section id="when" >
+        <h2>When Do I Usually Go</h2>
+        <p>
+            Friday evenings are sacred for me. With the week's workload behind me, I always make time for a soccer game. 
+        </p>
+        <p>
+            Being a Charlotte student myself, I've compiled a list of excellent soccer times, designed to suit everyone's soccer interests.
+        </p>
+        <table>
+            <tr>
+                <th>Small Group Practice</th>
+                <th>Recreation Play</th>
+                <th>Solo</th>
+            </tr>
+            <tr>
+                <td>Saturday 4PM-9PM</td>
+                <td>Sunday 6PM-11PM</td>
+                <td>Weekdays 4PM-10PM</td>
+            </tr>
+            <tr>
+                <td>Saturday 4PM-6PM</td>
+                <td>Sunday 5PM-6PM</td>
+                <td>Weekdays 4PM-10PM</td>
+            </tr>
+            <tr>
+                <td>Saturday 8PM-9PM</td>
+                <td>Sunday 6PM-11PM</td>
+                <td>Weekdays 5PM-8PM</td>
+            </tr>
+
+        </table>
+        <p>
+            If you're a regular at the NRFC, you'll quickly spot the ebb and flow of players throughout the day. The peak hours for soccer are definitely between 6 PM and 10 PM, that's when most students wrap up their classes and head to the fields. It can feel a little daunting to ask to jump into a game with a group already playing, but don't let that hold you back, just giving it a shot is what counts!
+        </p>
+    </section>
+    <section id="where">
+        <h2>Where Do I Usually Go</h2>
+        <p>
+            Being a Charlotte resident, the Charlotte Recreational Fields (CRF) are my main soccer hub. When I'm not at CRF, I'll often play in my neighborhood park or at a local community center. I also sometimes venture to other community fields in the Charlotte area to mix things up and get in some extra games.
+        </p>
+        <figure>
+            <img src="images/nrfc.jpg" alt="picture of NRFC">
+            <figcaption><i>NRFC</i></figcaption>
+        </figure>
+        <p>
+            When I'm not in Charlotte and I'm in India, I head to a local sports club to play soccer. It's a great option because I can usually find a game whenever I have free time, rather than being tied to a specific schedule. The players at the sports club are also quite skilled, so I always learn a lot and improve my game.
+        </p>
+
+    </section>
+    <section id="how">
+        <h2>What You Need To Play</h2>
+        <p>You don't need much to play soccer casually. The essentials are a pair of athletic shoes and a soccer ball. However, if you want to enhance your game, I recommend soccer cleats for better traction on the field. This will prevent slips and provide stability during intense matches. Another upgrade would be a high-quality soccer ball. A reputable brand like Adidas is a good choice. A premium ball can cost around $50-$100 on Amazon, which might seem like a big investment, but it definitely improves the playing experience. While I recommend Adidas, any FIFA-approved ball brand will serve you well.
+        </p>
+        <figure>
+            <img src="images/ball.jpeg" alt="soccerball">
+            <figcaption>football</figcaption>
+        </figure>
+        <p>While Adidas is my go-to for indoor soccer, outdoor or turf soccer calls for a different kind of ball. A brand like Nike produces excellent outdoor soccer balls. You might be wondering about the difference between indoor and outdoor soccer balls – it primarily comes down to the materials. Outdoor balls are designed for increased durability and enhanced grip, catering to the unique challenges of playing on grass or turf. When you play on these surfaces, the ball's behavior and the playing conditions demand a slightly different approach, often favoring strategic passing and controlled touches over high-speed dribbling.
+        </p>
+        <figure>
+            <img src="images/fifaball.jpeg" alt="Adidas Soccer Ball">
+            <figcaption>Adidas Soccer Ball used in FIFA games</figcaption>
+        </figure>
+
+    </section>
+    <section id="why">
+        <h2>Why You Should Play</h2>
+        <p>Soccer, at first glance, might seem like a straightforward sport. Anyone with a bit of athleticism can kick the ball and run. However, there's a deep well of complexity beyond those basic actions. Beyond simply shooting, there's passing, dribbling, and controlling the ball. These are some of soccer's most demanding skills. Mastering the subtle control required to direct the ball with your feet is an incredibly rewarding experience, and you can clearly track your progress as you improve. Furthermore, much like volleyball, there are countless techniques for striking the ball, each imparting a unique trajectory. Whether it's a driven shot, a curling pass, or a knuckleball, these are just a few of the skills to master, and they're anything but simple.
+        </p>
+        <figure>
+            <img class="man-volleyball" src="images/soccergroup.jpg" alt="people playing soccer">
+            <figcaption>People playing soccer</figcaption>
+        </figure>
+        <p>
+            Another reason is it can be a fantastic way to cool down after a workout or burn a few calories. Constantly running and changing direction can improve various aspects of your fitness, including your cardiovascular endurance, leg strength, and overall agility. Plus, it's a great way to relieve stress after a long day.</p>
+    </section>
+
+    <footer>
+        <p class="footer-links"><a href="../iyerenterprices.com/index.html">Iyer Enterprices© 2025</a></p>
+        <p class="footer-links">Designed by: Krish Iyer,<a href="https://freecodecamp.org/certification/kiyer6/responsive-web-design">Certified in Responsive Web Design</a></p>
+    </footer>
+
+</body>
+
+
+
+</html>
