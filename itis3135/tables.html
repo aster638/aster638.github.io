@@ -29,7 +29,7 @@
         
         <h3>Employee Data in Simple Table</h3>
         <table>
-            <tr class="heading">
+            <tr>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Years of Service</th>
@@ -81,17 +81,17 @@
             <figcaption>Employee Information</figcaption>
             <table class="complex-table">
                 <thead>
-                    <tr class="heading">
-                        <th>Department</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Years of Service</th>
-                        <th>Monthly Salary</th>
+                    <tr>
+                        <th id="department">Department</th>
+                        <th id="name">Name</th>
+                        <th id="email">Email</th>
+                        <th id="years">Years of Service</th>
+                        <th id="salary">Monthly Salary</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="3">Engineering</td>
+                        <td rowspan="3" headers="department">Engineering</td>
                         <td headers="name">Emily Johnson</td>
                         <td headers="email">ejohnson@techworks.com</td>
                         <td headers="years">5</td>
@@ -110,7 +110,7 @@
                         <td headers="salary">$9,800</td>
                     </tr>
                     <tr>
-                        <td rowspan="3">Marketing</td>
+                        <td rowspan="3" headers="department">Marketing</td>
                         <td headers="name">Sarah Williams</td>
                         <td headers="email">swilliams@yahoo.com</td>
                         <td headers="years">3</td>
@@ -129,7 +129,7 @@
                         <td headers="salary">$6,900</td>
                     </tr>
                     <tr>
-                        <td rowspan="2">Management</td>
+                        <td rowspan="2" headers="department">Management</td>
                         <td headers="name">Michael Rodriguez</td>
                         <td headers="email">mrodriguez89@gmail.com</td>
                         <td headers="years">12</td>
