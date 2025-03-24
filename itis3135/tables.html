@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Iyer's King-sized Inchworm || ITIS 3135 || Tables</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css"> 
+</head>
+<body>
+    <header class="title-name">
+        <div data-include="components/header.html"></div>
+    </header>
+    <div class="gold-line"></div>
+    <main>
+        <h2>HTML Tables Assignment</h2>
+        
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Emily Johnson - ejohnson@techworks.com - 5 years</li>
+            <li>Michael Rodriguez - mrodriguez89@gmail.com - 12 years</li>
+            <li>Sarah Williams - swilliams@yahoo.com - 3 years</li>
+            <li>David Chen - dchen@creativeminds.org - 8 years</li>
+            <li>Jessica Taylor - jtaylor23@hotmail.com - 2 years</li>
+            <li>Robert Kim - rkim@dataexperts.com - 15 years</li>
+            <li>Olivia Martinez - omartinez@innovatetech.com - 7 years</li>
+            <li>James Wilson - jwilson@cloudcomputing.net - 10 years</li>
+        </ol>
+        
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr class="heading">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>ejohnson@techworks.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Michael Rodriguez</td>
+                <td>mrodriguez89@gmail.com</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Sarah Williams</td>
+                <td>swilliams@yahoo.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>David Chen</td>
+                <td>dchen@creativeminds.org</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Jessica Taylor</td>
+                <td>jtaylor23@hotmail.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Robert Kim</td>
+                <td>rkim@dataexperts.com</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Olivia Martinez</td>
+                <td>omartinez@innovatetech.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>James Wilson</td>
+                <td>jwilson@cloudcomputing.net</td>
+                <td>10</td>
+            </tr>
+        </table>
+        
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table class="complex-table">
+                <thead>
+                    <tr class="heading">
+                        <th>Department</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                        <th>Monthly Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Engineering</td>
+                        <td headers="name">Emily Johnson</td>
+                        <td headers="email">ejohnson@techworks.com</td>
+                        <td headers="years">5</td>
+                        <td headers="salary">$6,500</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">David Chen</td>
+                        <td headers="email">dchen@creativeminds.org</td>
+                        <td headers="years">8</td>
+                        <td headers="salary">$7,200</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Robert Kim</td>
+                        <td headers="email">rkim@dataexperts.com</td>
+                        <td headers="years">15</td>
+                        <td headers="salary">$9,800</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Marketing</td>
+                        <td headers="name">Sarah Williams</td>
+                        <td headers="email">swilliams@yahoo.com</td>
+                        <td headers="years">3</td>
+                        <td headers="salary">$5,200</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Jessica Taylor</td>
+                        <td headers="email">jtaylor23@hotmail.com</td>
+                        <td headers="years">2</td>
+                        <td headers="salary">$4,800</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">Olivia Martinez</td>
+                        <td headers="email">omartinez@innovatetech.com</td>
+                        <td headers="years">7</td>
+                        <td headers="salary">$6,900</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Management</td>
+                        <td headers="name">Michael Rodriguez</td>
+                        <td headers="email">mrodriguez89@gmail.com</td>
+                        <td headers="years">12</td>
+                        <td headers="salary">$12,500</td>
+                    </tr>
+                    <tr>
+                        <td headers="name">James Wilson</td>
+                        <td headers="email">jwilson@cloudcomputing.net</td>
+                        <td headers="years">10</td>
+                        <td headers="salary">$11,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Years of Service</th>
+                        <td>62</td>
+                        <td>$63,900</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </figure>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
