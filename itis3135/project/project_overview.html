@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview: HTML Horizon</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3, h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.75em; }
+        h3 { font-size: 1.5em; }
+        h4 { font-size: 1.25em; }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 1em;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        strong { 
+             display: block;
+             margin-top: 0.5em;
+        }
+        hr {
+            margin: 2em 0;
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+            margin-top: 1em;
+        }
+         .placeholder-action {
+            font-weight: bold;
+            color: #d9534f; 
+            background-color: #f2dede; 
+            padding: 2px 5px;
+            border-radius: 3px;
+         } 
+         img {
+            width: 30%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         figcaption {
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+
+    <h1>Requirements and Design Document</h1>
+
+    <h2>Project Name: HTML Horizon</h2>
+
+    <hr>
+
+    <h2>Project Overview:</h2>
+    <ul>
+        <li>
+            <strong>Describe your application and its purpose:</strong>
+            <p>The "HTML Horizon" is a web application designed as an interactive educational resource. Its primary purpose is to teach the fundamentals of HyperText Markup Language (HTML) to beginners in a clear, structured, and engaging manner. It aims to provide foundational knowledge for individuals starting their journey into web development. The application will break down concepts into manageable modules, using code examples and interactive elements to facilitate learning.</p>
+        </li>
+        <li>
+            <strong>Intended users of the website:</strong>
+            <ul>
+                <li>Students (like the client) seeking foundational web development skills.</li>
+                <li>Absolute beginners with no prior coding or HTML experience.</li>
+                <li>Individuals needing a quick refresher on HTML basics.</li>
+                <li>Self-directed learners interested in web technologies.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Overview of the content of the website:</strong>
+            <p>The website will cover fundamental HTML topics including:</p>
+            <ul>
+                <li>An introduction to HTML (definition, purpose, history).</li>
+                <li>Core concepts like document structure (&lt;html&gt;, &lt;head&gt;, &lt;body&gt;), elements, tags, and attributes.</li>
+                <li>Essential HTML tags for text (headings, paragraphs), links, images, emphasis.</li>
+                <li>Structuring content with ordered and unordered lists, and basic tables.</li>
+                <li>Introduction to HTML forms structure (inputs, labels, buttons) for demonstration.</li>
+                <li>Interactive code examples and potentially simple quizzes.</li>
+                <li>A curated list of external resources for further learning and validation.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Client Information:</h2>
+    <ul>
+        <li><strong>Name of the client:</strong> [Private]</li>
+        <li><strong>Organization/Institute/Business the client is associated with:</strong> Student at University of North Carolina at Charlotte</li>
+        <li><strong>Client’s valid email address:</strong> [Private]</li>
+        <li><strong>Client’s phone number:</strong> [Private]</li>
+    </ul>
+    <p class="note"><em>(Note: Contact details are marked as private to protect client privacy.)</em></p>
+    
+    
+    
+    <hr>
+
+    <h2>Wireframe:</h2>
+    <figure>
+        <img src="../images/Wireframe.drawio.png" alt="Sample Wireframe Image">
+        <figcaption><br>
+          Wireframe Diagram: <a href="https://drive.google.com/file/d/1IGlZuCRed5liDENnivvjxbhpysUgJ10L/view?usp=sharing">View Diagram</a>
+        </figcaption>
+      </figure>
+    
+    <hr>
+
+    <h2>Site Map:</h2>
+    <p>A site map is crucial for understanding the website's structure and navigation flow. The planned structure includes a home page and several module pages covering key HTML topics, plus a resources page. A consistent header and footer will be used across all pages.</p>
+    <figure>
+        <img src="../images/SiteMap.jpg" alt="Sample SiteMap Image">
+        <figcaption><br>
+          Wireframe Diagram: <a href="https://drive.google.com/file/d/1tFRfuGk9dNeCgFiyHgV_iCmS0v1CmsVX/view?usp=sharing">View Diagram</a>
+        </figcaption>
+    </figure>
+    <p>The planned pages are:</p>
+    <ol>
+        <li>Home (index.html)</li>
+        <li>Introduction to HTML (intro.html)</li>
+        <li>Basic Tags (tags.html)</li>
+        <li>Lists and Tables (lists_tables.html)</li>
+        <li>Simple Forms (forms.html)</li>
+        <li>Resources (resources.html)</li>
+    </ol>
+
+    <hr>
+
+    <h2>Page Design:</h2>
+    <p>Details for each page listed in the site map:</p>
+
+    <section>
+        <h4>Page 1: Home (index.html)</h4>
+        <ul>
+            <li><strong>Purpose of the page:</strong> Welcome users, briefly introduce the site's purpose (learning HTML), and provide clear navigation/starting points into the learning content.</li>
+            <li><strong>Audience/Users of page:</strong> All visitors, especially first-time visitors.</li>
+            <li><strong>What will be content of the page?</strong>
+                <ul>
+                    <li>Welcome message, brief site description.</li>
+                    <li>High-level overview of HTML or topics covered.</li>
+                    <li>Clear calls-to-action or links to begin the learning modules.</li>
+                    <li><strong>Is this a page where you are asking users to enter data on the page?</strong> No.</li>
+                    <li><strong>Will those data fields need any validations (if any)?</strong> N/A.</li>
+                    <li><strong>Will the page contain buttons or hyperlinks or drop downs?</strong> Yes, hyperlinks and potentially buttons to navigate to modules.</li>
+                    <li><strong>What actions will happen in the page?</strong> Navigation to other site pages (modules).</li>
+                    <li><strong>Any special notes regarding the page (if any)?</strong> Main landing page; needs to be engaging and intuitive.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>Page 2: Introduction to HTML (intro.html)</h4>
+        <ul>
+            <li><strong>Purpose of the page:</strong> Explain the fundamental concepts: what HTML is, its role, basic document structure (`&lt;!DOCTYPE&gt;`, `&lt;html&gt;`, `&lt;head&gt;`, `&lt;body&gt;`), elements vs. tags.</li>
+            <li><strong>Audience/Users of page:</strong> Beginners starting the learning modules.</li>
+            <li><strong>What will be content of the page?</strong>
+                <ul>
+                    <li>Explanatory text.</li>
+                    <li>Code examples demonstrating basic document structure.</li>
+                    <li>Possibly simple diagrams illustrating structure.</li>
+                    <li><strong>Is this a page where you are asking users to enter data on the page?</strong> No.</li>
+                    <li><strong>Will those data fields need any validations (if any)?</strong> N/A.</li>
+                    <li><strong>Will the page contain buttons or hyperlinks or drop downs?</strong> Yes, hyperlinks (main navigation, possibly "Next Module" link).</li>
+                    <li><strong>What actions will happen in the page?</strong> Reading content, navigation.</li>
+                    <li><strong>Any special notes regarding the page (if any)?</strong> Sets the foundation for subsequent modules.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>Page 3: Basic Tags (tags.html)</h4>
+        <ul>
+            <li><strong>Purpose of the page:</strong> Teach common HTML tags for content structuring: headings (`&lt;h1&gt;`-`&lt;h6&gt;`), paragraphs (`&lt;p&gt;`), links (`&lt;a&gt;`), images (`&lt;img&gt;`), emphasis (`&lt;strong&gt;`, `&lt;em&gt;`).</li>
+            <li><strong>Audience/Users of page:</strong> Learners who have completed the Introduction.</li>
+            <li><strong>What will be content of the page?</strong>
+                <ul>
+                    <li>Explanations for each tag and key attributes (e.g., `href`, `src`, `alt`).</li>
+                    <li>Code examples for each tag.</li>
+                    <li>Visual rendering of the code examples.</li>
+                    <li><strong>Is this a page where you are asking users to enter data on the page?</strong> No.</li>
+                    <li><strong>Will those data fields need any validations (if any)?</strong> N/A.</li>
+                    <li><strong>Will the page contain buttons or hyperlinks or drop downs?</strong> Yes, hyperlinks (main navigation, potentially within content for examples or interactive elements).</li>
+                    <li><strong>What actions will happen in the page?</strong> Reading content, viewing examples, interacting with potential dynamic code viewers, navigation.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+     <section>
+        <h4>Page 4: Lists and Tables (lists_tables.html)</h4>
+        <ul>
+            <li><strong>Purpose of the page:</strong> Teach how to create ordered (`&lt;ol&gt;`), unordered (`&lt;ul&gt;`), and list items (`&lt;li&gt;`), plus basic HTML tables (`&lt;table&gt;`, `&lt;tr&gt;`, `&lt;th&gt;`, `&lt;td&gt;`) for organizing information.</li>
+            <li><strong>Audience/Users of page:</strong> Learners progressing through the modules.</li>
+            <li><strong>What will be content of the page?</strong>
+                <ul>
+                    <li>Explanations of list and table structures.</li>
+                    <li>Code examples for different list types and a basic table.</li>
+                    <li>Rendered output of the examples.</li>
+                    <li><strong>Is this a page where you are asking users to enter data on the page?</strong> No.</li>
+                    <li><strong>Will those data fields need any validations (if any)?</strong> N/A.</li>
+                    <li><strong>Will the page contain buttons or hyperlinks or drop downs?</strong> Yes, hyperlinks (main navigation).</li>
+                    <li><strong>What actions will happen in the page?</strong> Reading content, viewing examples, navigation.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>Page 5: Simple Forms (forms.html)</h4>
+        <ul>
+            <li><strong>Purpose of the page:</strong> Introduce HTML forms (`&lt;form&gt;`), common input types (`&lt;input type="..."&gt;`), labels (`&lt;label&gt;`), and buttons (`&lt;button&gt;`), focusing purely on structure and client-side appearance/validation.</li>
+            <li><strong>Audience/Users of page:</strong> Learners ready to understand form structure.</li>
+            <li><strong>What will be content of the page?</strong>
+                <ul>
+                    <li>Explanation of the `&lt;form&gt;` element and its purpose (structure, not submission).</li>
+                    <li>Description of various `&lt;input&gt;` types (text, email, password, checkbox, radio, submit) and the `&lt;label&gt;` element.</li>
+                    <li>A simple example form demonstrating these elements.</li>
+                    <li><strong>Is this a page where you are asking users to enter data on the page?</strong> Yes (for demonstration purposes within the browser only).</li>
+                    <li><strong>Will those data fields need any validations (if any)?</strong> Yes (basic client-side HTML5 validation like `required`, `type="email"` will be demonstrated).</li>
+                    <li><strong>Will the page contain buttons or hyperlinks or drop downs?</strong> Yes, the example form will contain input fields and buttons. Standard navigation hyperlinks will also be present.</li>
+                    <li><strong>What actions will happen in the page?</strong> User interaction with form fields (typing, selecting), clicking a submit button (which will trigger client-side validation but *not* send data to a server or navigate away based on form submission). Standard page navigation via hyperlinks.</li>
+                    <li><strong>Any special notes regarding the page (if any)?</strong> <strong>Crucially, this page will *only* demonstrate the front-end structure and client-side validation of forms. Due to course constraints (no CRUD/database interaction), no data will be processed, saved, or submitted.</strong> This must be clearly communicated on the page itself.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h4>Page 6: Resources (resources.html)</h4>
+        <ul>
+            <li><strong>Purpose of the page:</strong> Provide a curated list of helpful external links for further learning, reference, and tools (like HTML validators).</li>
+            <li><strong>Audience/Users of page:</strong> All users, especially those seeking additional information or tools.</li>
+            <li><strong>What will be content of the page?</strong>
+                <ul>
+                    <li>Annotated links to reputable resources (e.g., MDN Web Docs, W3Schools, W3C Validator).</li>
+                    <li>Possibly a glossary of HTML terms (potentially loaded via AJAX).</li>
+                    <li><strong>Is this a page where you are asking users to enter data on the page?</strong> No.</li>
+                    <li><strong>Will those data fields need any validations (if any)?</strong> N/A.</li>
+                    <li><strong>Will the page contain buttons or hyperlinks or drop downs?</strong> Yes, hyperlinks to external resources and standard site navigation. May contain interactive elements like an Accordion.</li>
+                    <li><strong>What actions will happen in the page?</strong> Clicking hyperlinks to navigate to external sites. Potential AJAX request to load glossary data. Interacting with UI widgets (like Accordion).</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <p class="note"><em>(<strong>Mockup Encouragement:</strong> You are highly encouraged to create mockups or prototypes for these pages using tools like Balsamiq, Axure, or Justinmind. This aids design planning and can earn extra credit.)</em></p>
+
+    <hr>
+
+    <h2>Dynamic Functionality on the Website:</h2>
+    <p>The following dynamic functionalities will be implemented using JavaScript/jQuery to enhance user interaction and learning:</p>
+    <ul>
+        <li>
+            <strong>1. Interactive Code Examples:</strong>
+            <ul>
+                <li><strong>Description:</strong> Allow users to easily toggle between viewing HTML code snippets and seeing the immediate rendered output on the page. This might involve using jQuery's `.toggle()` or similar methods triggered by buttons or tabs.</li>
+                <li><strong>Webpage(s):</strong> Basic Tags (tags.html), Lists and Tables (lists_tables.html), Simple Forms (forms.html).</li>
+                <li><strong>Reason:</strong> To visually connect HTML syntax with its browser output, reinforcing learning through immediate cause-and-effect demonstration.</li>
+                <li><strong>Example URL Inspiration:</strong> The concept used in W3Schools' "Try it Yourself" editor or MDN's interactive examples.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>2. Simple Knowledge Checks/Quizzes:</strong>
+            <ul>
+                <li><strong>Description:</strong> Implement basic multiple-choice quizzes using JavaScript/jQuery at the end of modules. User selections will be checked client-side, providing immediate correct/incorrect feedback.</li>
+                <li><strong>Webpage(s):</strong> Potentially added to module pages (tags.html, lists_tables.html) or a dedicated quiz page (if scope allows).</li>
+                <li><strong>Reason:</strong> To provide users with a way to self-assess their comprehension and reinforce key concepts learned in the module.</li>
+                <li><strong>Example URL Inspiration:</strong> Basic client-side quiz functionality demonstrated in many online tutorials and e-learning platforms.</li>
+            </ul>
+        </li>
+        <li>
+             <strong>3. jQuery UI Widget (Accordion/Tabs):</strong>
+            <ul>
+                <li><strong>Description:</strong> Employ jQuery UI widgets like Accordion (for FAQs or glossary) or Tabs (for organizing content within modules like Explanation | Code | Output).</li>
+                <li><strong>Webpage(s):</strong> Resources (resources.html) for Accordion; potentially module pages (intro.html, tags.html, etc.) for Tabs.</li>
+                <li><strong>Reason:</strong> To improve content organization, reduce clutter, and enhance the user experience on pages with diverse information types.</li>
+                <li><strong>Example URL Inspiration:</strong> Official jQuery UI Demos: <a href="https://jqueryui.com/accordion/" target="_blank">https://jqueryui.com/accordion/</a>, <a href="https://jqueryui.com/tabs/" target="_blank">https://jqueryui.com/tabs/</a></li>
+            </ul>
+        </li>
+         <li>
+             <strong>4. AJAX Functionality (Glossary Loading):</strong>
+            <ul>
+                <li><strong>Description:</strong> Store HTML terms and definitions in a separate JSON file. Use an AJAX request (e.g., jQuery's `$.getJSON`) to fetch this data and display it dynamically within the Resources page, possibly inside an Accordion section.</li>
+                <li><strong>Webpage(s):</strong> Resources (resources.html).</li>
+                <li><strong>Reason:</strong> To demonstrate asynchronous data loading without full page reloads, making the glossary easily updatable and keeping the main HTML cleaner.</li>
+                <li><strong>Example URL Inspiration:</strong> Common pattern for dynamically loading content sections or data from external files, widely demonstrated in AJAX tutorials.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>5. Enhanced Form Validation Feedback:</strong>
+            <ul>
+                <li><strong>Description:</strong> Supplement standard HTML5 form validation with JavaScript to provide more customized or user-friendly error messages or visual cues when users interact incorrectly with the demonstration form.</li>
+                <li><strong>Webpage(s):</strong> Simple Forms (forms.html).</li>
+                <li><strong>Reason:</strong> To improve the clarity of validation feedback during the form structure demonstration.</li>
+                <li><strong>Example URL Inspiration:</strong> Custom validation feedback patterns seen on many modern web forms.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <footer>
+        <p>Document generated on: March 30, 2025</p>
+        </footer>
+
+</body>
+</html>
