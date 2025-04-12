@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and Tables | HTML Horizon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="HTML Horizon Logo">
+                <h1>HTML Horizon</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">Introduction</a></li>
+                    <li><a href="tags.html">Basic Tags</a></li>
+                    <li><a href="lists_tables.html" class="active">Lists & Tables</a></li>
+                    <li><a href="forms.html">Simple Forms</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Lists and Tables</h1>
+            
+            <div class="module-content">
+                <div class="main-content">
+                    <section class="section">
+                        <h2 class="section-title">HTML Lists</h2>
+                        <p>Lists are fundamental structures in HTML that allow you to group related items together. HTML provides three main types of lists:</p>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Unordered Lists</h3>
+                            <div class="card-content">
+                                <p>Unordered lists (<code>&lt;ul&gt;</code>) are used when the order of items doesn't matter. Each item is marked with a bullet point by default.</p>
+                            </div>
+                            
+                            <div class="code-block">
+                                <div class="code-tabs">
+                                    <div class="code-tab active" data-panel="ul-code">HTML</div>
+                                    <div class="code-tab" data-panel="ul-output">Output</div>
+                                </div>
+                                <div class="code-panel active" id="ul-code">
+                                    <div class="code-example">
+                                        <pre><code>&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="code-panel" id="ul-output">
+                                    <ul>
+                                        <li>First item</li>
+                                        <li>Second item</li>
+                                        <li>Third item</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Ordered Lists</h3>
+                            <div class="card-content">
+                                <p>Ordered lists (<code>&lt;ol&gt;</code>) are used when the sequence of items is important. Items are automatically numbered by default.</p>
+                            </div>
+                            
+                            <div class="code-block">
+                                <div class="code-tabs">
+                                    <div class="code-tab active" data-panel="ol-code">HTML</div>
+                                    <div class="code-tab" data-panel="ol-output">Output</div>
+                                </div>
+                                <div class="code-panel active" id="ol-code">
+                                    <div class="code-example">
+                                        <pre><code>&lt;ol&gt;
+    &lt;li&gt;First step&lt;/li&gt;
+    &lt;li&gt;Second step&lt;/li&gt;
+    &lt;li&gt;Third step&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="code-panel" id="ol-output">
+                                    <ol>
+                                        <li>First step</li>
+                                        <li>Second step</li>
+                                        <li>Third step</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Definition Lists</h3>
+                            <div class="card-content">
+                                <p>Definition lists (<code>&lt;dl&gt;</code>) are used to present term-definition pairs, like a glossary or dictionary.</p>
+                            </div>
+                            
+                            <div class="code-block">
+                                <div class="code-tabs">
+                                    <div class="code-tab active" data-panel="dl-code">HTML</div>
+                                    <div class="code-tab" data-panel="dl-output">Output</div>
+                                </div>
+                                <div class="code-panel active" id="dl-code">
+                                    <div class="code-example">
+                                        <pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language, the standard language for creating web pages.&lt;/dd&gt;
+    
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets, used for styling web pages.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="code-panel" id="dl-output">
+                                    <dl>
+                                        <dt>HTML</dt>
+                                        <dd>HyperText Markup Language, the standard language for creating web pages.</dd>
+                                        
+                                        <dt>CSS</dt>
+                                        <dd>Cascading Style Sheets, used for styling web pages.</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Nested Lists</h3>
+                            <div class="card-content">
+                                <p>Lists can be nested inside other lists to create hierarchical structures.</p>
+                            </div>
+                            
+                            <div class="code-block">
+                                <div class="code-tabs">
+                                    <div class="code-tab active" data-panel="nested-code">HTML</div>
+                                    <div class="code-tab" data-panel="nested-output">Output</div>
+                                </div>
+                                <div class="code-panel active" id="nested-code">
+                                    <div class="code-example">
+                                        <pre><code id="HTMLT">&lt;ul&gt;
+    &lt;li&gt;Fruits
+        &lt;ul&gt;
+            &lt;li&gt;Apples&lt;/li&gt;
+            &lt;li&gt;Bananas&lt;/li&gt;
+            &lt;li&gt;Oranges&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Vegetables
+        &lt;ul&gt;
+            &lt;li&gt;Carrots&lt;/li&gt;
+            &lt;li&gt;Broccoli&lt;/li&gt;
+            &lt;li&gt;Spinach&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="code-panel" id="nested-output">
+                                    <ul>
+                                        <li>Fruits
+                                            <ul>
+                                                <li>Apples</li>
+                                                <li>Bananas</li>
+                                                <li>Oranges</li>
+                                            </ul>
+                                        </li>
+                                        <li>Vegetables
+                                            <ul>
+                                                <li>Carrots</li>
+                                                <li>Broccoli</li>
+                                                <li>Spinach</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="section">
+                        <h2 class="section-title">HTML Tables</h2>
+                        <p>Tables in HTML allow you to organize data into rows and columns. They are particularly useful for displaying structured information like schedules, data comparisons, or product specifications.</p>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Basic Table Structure</h3>
+                            <div class="card-content">
+                                <p>A basic HTML table consists of the following elements:</p>
+                                <ul>
+                                    <li><code>&lt;table&gt;</code> - The container for the entire table</li>
+                                    <li><code>&lt;tr&gt;</code> - Table row</li>
+                                    <li><code>&lt;th&gt;</code> - Table header cell</li>
+                                    <li><code>&lt;td&gt;</code> - Table data cell</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="code-block">
+                                <div class="code-tabs">
+                                    <div class="code-tab active" data-panel="table-code">HTML</div>
+                                    <div class="code-tab" data-panel="table-output">Output</div>
+                                </div>
+                                <div class="code-panel active" id="table-code">
+                                    <div class="code-example">
+                                        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+        &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John Smith&lt;/td&gt;
+        &lt;td&gt;28&lt;/td&gt;
+        &lt;td&gt;USA&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Maria Garcia&lt;/td&gt;
+        &lt;td&gt;32&lt;/td&gt;
+        &lt;td&gt;Spain&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="code-panel" id="table-output">
+                                    <table style="border-collapse: collapse; width: 100%;">
+                                        <tr style="background-color: #f2f2f2;">
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Name</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Age</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Country</th>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">John Smith</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">28</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">USA</td>
+                                        </tr>
+                                        <tr style="background-color: #f2f2f2;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Maria Garcia</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">32</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Spain</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Table Structure with Caption and Sections</h3>
+                            <div class="card-content">
+                                <p>HTML tables can be enhanced with additional structural elements:</p>
+                                <ul>
+                                    <li><code>&lt;caption&gt;</code> - A title or description for the table</li>
+                                    <li><code>&lt;thead&gt;</code> - Groups the header content</li>
+                                    <li><code>&lt;tbody&gt;</code> - Groups the body content</li>
+                                    <li><code>&lt;tfoot&gt;</code> - Groups the footer content</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="code-block">
+                                <div class="code-tabs">
+                                    <div class="code-tab active" data-panel="advanced-table-code">HTML</div>
+                                    <div class="code-tab" data-panel="advanced-table-output">Output</div>
+                                </div>
+                                <div class="code-panel active" id="advanced-table-code">
+                                    <div class="code-example">
+                                        <pre><code>&lt;table&gt;
+    &lt;caption&gt;Monthly Savings&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Month&lt;/th&gt;
+            &lt;th&gt;Income&lt;/th&gt;
+            &lt;th&gt;Expenses&lt;/th&gt;
+            &lt;th&gt;Savings&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;January&lt;/td&gt;
+            &lt;td&gt;$3000&lt;/td&gt;
+            &lt;td&gt;$1500&lt;/td&gt;
+            &lt;td&gt;$1500&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;February&lt;/td&gt;
+            &lt;td&gt;$3200&lt;/td&gt;
+            &lt;td&gt;$1800&lt;/td&gt;
+            &lt;td&gt;$1400&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;Total Savings:&lt;/td&gt;
+            &lt;td&gt;$2900&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="code-panel" id="advanced-table-output">
+                                    <table style="border-collapse: collapse; width: 100%;">
+                                        <caption style="padding: 10px; font-weight: bold;">Monthly Savings</caption>
+                                        <thead>
+                                            <tr style="background-color: #f2f2f2;">
+                                                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Month</th>
+                                                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Income</th>
+                                                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Expenses</th>
+                                                <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Savings</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="border: 1px solid #ddd; padding: 8px;">January</td>
+                                                <td style="border: 1px solid #ddd; padding: 8px;">$3000</td>
+                                                <td style="border: 1px solid #ddd; padding: 8px;">$1500</td>
+                                                <td style="border: 1px solid #ddd; padding: 8px;">$1500</td>
+                                            </tr>
+                                            <tr style="background-color: #f2f2f2;">
+                                                <td style="border: 1px solid #ddd; padding: 8px;">February</td>
+                                                <td style="border: 1px solid #ddd; padding: 8px;">$3200</td>
+                                                <td style="border: 1px solid #ddd; padding: 8px;">$1800</td>
+                                                <td style="border: 1px solid #ddd; padding: 8px;">$1400</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr style="background-color: #e6e6e6;">
+                                                <td colspan="3" style="border: 1px solid #ddd; padding: 8px; text-align: right; font-weight: bold;">Total Savings:</td>
+                                                <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">$2900</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Table Cell Spanning</h3>
+                            <div class="card-content">
+                                <p>Table cells can span multiple rows or columns using the <code>rowspan</code> and <code>colspan</code> attributes.</p>
+                            </div>
+                            
+                            <div class="code-block">
+                                <div class="code-tabs">
+                                    <div class="code-tab active" data-panel="spanning-code">HTML</div>
+                                    <div class="code-tab" data-panel="spanning-output">Output</div>
+                                </div>
+                                <div class="code-panel active" id="spanning-code">
+                                    <div class="code-example">
+                                        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th colspan="2"&gt;Contact Info&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John Smith&lt;/td&gt;
+        &lt;td&gt;555-1234&lt;/td&gt;
+        &lt;td&gt;john@example.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td rowspan="2"&gt;Jane Doe&lt;/td&gt;
+        &lt;td&gt;555-5678&lt;/td&gt;
+        &lt;td&gt;jane@example.com&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;555-8765&lt;/td&gt;
+        &lt;td&gt;jane.work@example.com&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+                                    </div>
+                                </div>
+                                <div class="code-panel" id="spanning-output">
+                                    <table style="border-collapse: collapse; width: 100%;">
+                                        <tr style="background-color: #f2f2f2;">
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Name</th>
+                                            <th colspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: left;">Contact Info</th>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">John Smith</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">555-1234</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">john@example.com</td>
+                                        </tr>
+                                        <tr style="background-color: #f2f2f2;">
+                                            <td rowspan="2" style="border: 1px solid #ddd; padding: 8px;">Jane Doe</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">555-5678</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">jane@example.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">555-8765</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">jane.work@example.com</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <div class="module-nav">
+                        <a href="tags.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Previous: Basic Tags</a>
+                        <a href="forms.html" class="btn">Next: Simple Forms <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <h3 class="sidebar-title">In This Module</h3>
+                    <ul>
+                        <li><a href="#" class="active">HTML Lists</a></li>
+                        <li><a href="#HTMLT">HTML Tables</a></li>
+                    </ul>
+                    
+                    <h3 class="sidebar-title">Learning Path</h3>
+                    <ul>
+                        <li><a href="intro.html">Introduction to HTML</a></li>
+                        <li><a href="tags.html">Basic HTML Tags</a></li>
+                        <li><a href="lists_tables.html">Lists & Tables</a></li>
+                        <li><a href="forms.html">Simple Forms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">
+                <p>Learn HTML fundamentals the right way</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/aster638" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishiyer638" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HTML Horizon. A project created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

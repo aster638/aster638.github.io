@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Forms | HTML Horizon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="HTML Horizon Logo">
+                <h1>HTML Horizon</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">Introduction</a></li>
+                    <li><a href="tags.html">Basic Tags</a></li>
+                    <li><a href="lists_tables.html">Lists & Tables</a></li>
+                    <li><a href="forms.html" class="active">Simple Forms</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="Understand">
+            <h1 class="page-title">Simple Forms</h1>
+            
+            <div class="module-content">
+                <div class="content">
+                    <section class="section">
+                        <h2 class="section-title">Understanding HTML Forms</h2>
+                        <p>HTML forms are essential for collecting user input on websites. They allow users to enter data that can be sent to a server for processing. In this module, we'll focus on the front-end structure and appearance of forms, not on how they process data.</p>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <p id="Basic"><strong>Note:</strong> This module covers the HTML structure of forms only. For actual data processing and form submission, you would need server-side programming which is beyond the scope of this tutorial.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Basic Form Structure</h2>
+                        <p>Every HTML form starts with the <code>&lt;form&gt;</code> element. This element contains various input elements that collect different types of data:</p>
+                        
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="form-code">HTML Code</div>
+                                <div class="code-tab" data-panel="form-output">Output</div>
+                            </div>
+                            <div class="code-panel active" id="form-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;form action="#" method="post"&gt;
+    &lt;!-- Form elements go here --&gt;
+    &lt;input type="text" name="username"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="form-output">
+                                <div class="card">
+                                    <form action="#" method="post" style="display: flex; flex-direction: column; gap: 10px; width: 50%;">
+                                        <input type="text" name="username" placeholder="Username" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                                        <input type="submit" value="Submit" style="padding: 8px 12px; background-color: #0077cc; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p>The <code>&lt;form&gt;</code> element has two important attributes:</p>
+                        <ul>
+                            <li><code>action</code> - Specifies where to send the form data when submitted</li>
+                            <li><code id="InputElem">method</code> - Specifies which HTTP method to use (usually "get" or "post")</li>
+                        </ul>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Input Elements</h2>
+                        <p>The <code>&lt;input&gt;</code> element is the most versatile form control. Its behavior changes dramatically depending on the value of its <code>type</code> attribute.</p>
+                        
+                        <h3>Text Input</h3>
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="text-input-code">HTML Code</div>
+                                <div class="code-tab" data-panel="text-input-output">Output</div>
+                            </div>
+                            <div class="code-panel active" id="text-input-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username" placeholder="Enter your username"&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="text-input-output">
+                                <div class="card">
+                                    <label for="demo-username" style="display: block; margin-bottom: 5px;">Username:</label>
+                                    <input type="text" id="demo-username" name="username" placeholder="Enter your username" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 100%; max-width: 300px;">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Password Input</h3>
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="password-input-code">HTML Code</div>
+                                <div class="code-tab" data-panel="password-input-output">Output</div>
+                            </div>
+                            <div class="code-panel active" id="password-input-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;label for="password"&gt;Password:&lt;/label&gt;
+&lt;input type="password" id="password" name="password"&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="password-input-output">
+                                <div class="card">
+                                    <label for="demo-password" style="display: block; margin-bottom: 5px;">Password:</label>
+                                    <input type="password" id="demo-password" name="password" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 100%; max-width: 300px;">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Email Input</h3>
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="email-input-code">HTML Code</div>
+                                <div class="code-tab" data-panel="email-input-output">Output</div>
+                            </div>
+                            <div class="code-panel active" id="email-input-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" required&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="email-input-output">
+                                <div class="card">
+                                    <label for="demo-email" style="display: block; margin-bottom: 5px;">Email:</label>
+                                    <input type="email" id="demo-email" name="email" required style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 100%; max-width: 300px;">
+                                    <p style="font-size: 0.8rem; color: #666; margin-top: 5px;">This field uses HTML5 validation to check for valid email format.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Checkboxes</h3>
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="checkbox-code">HTML Code</div>
+                                <div class="code-tab" data-panel="checkbox-output">Output</div>
+                            </div>
+                            <div class="code-panel active" id="checkbox-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;div class="checkbox-group"&gt;
+    &lt;input type="checkbox" id="subscribe" name="subscribe" value="yes"&gt;
+    &lt;label for="subscribe"&gt;Subscribe to newsletter&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox-group"&gt;
+    &lt;input type="checkbox" id="terms" name="terms" value="accepted" required&gt;
+    &lt;label for="terms"&gt;I accept the terms and conditions&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="checkbox-output">
+                                <div class="card">
+                                    <div class="checkbox-group" style="display: flex; align-items: center; margin-bottom: 10px;">
+                                        <input type="checkbox" id="demo-subscribe" name="subscribe" value="yes" style="margin-right: 8px;">
+                                        <label for="demo-subscribe">Subscribe to newsletter</label>
+                                    </div>
+                                    <div class="checkbox-group" style="display: flex; align-items: center;">
+                                        <input type="checkbox" id="demo-terms" name="terms" value="accepted" required style="margin-right: 8px;">
+                                        <label for="demo-terms">I accept the terms and conditions</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Radio Buttons</h3>
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="radio-code">HTML Code</div>
+                                <div class="code-tab" data-panel="radio-output">Output</div>
+                            </div>
+                            <div class="code-panel active" id="radio-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;div class="radio-group"&gt;
+    &lt;p&gt;Select your preferred contact method:&lt;/p&gt;
+    &lt;input type="radio" id="contact-email" name="contact" value="email" checked&gt;
+    &lt;label for="contact-email"&gt;Email&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio-group"&gt;
+    &lt;input type="radio" id="contact-phone" name="contact" value="phone"&gt;
+    &lt;label for="contact-phone"&gt;Phone&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="radio-output">
+                                <div class="card">
+                                    <p style="margin-bottom: 8px;">Select your preferred contact method:</p>
+                                    <div class="radio-group" style="display: flex; align-items: center; margin-bottom: 8px;">
+                                        <input type="radio" id="demo-contact-email" name="demo-contact" value="email" checked style="margin-right: 8px;">
+                                        <label for="demo-contact-email">Email</label>
+                                    </div>
+                                    <div class="radio-group" style="display: flex; align-items: center;">
+                                        <input type="radio" id="demo-contact-phone" name="demo-contact" value="phone" style="margin-right: 8px;">
+                                        <label for="demo-contact-phone">Phone</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 id="FormV">Select Dropdown</h3>
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="select-code">HTML Code</div>
+                                <div class="code-tab" data-panel="select-output">Output</div>
+                            </div>
+                            <div class="code-panel active" id="select-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;label for="country"&gt;Country:&lt;/label&gt;
+&lt;select id="country" name="country"&gt;
+    &lt;option value=""&gt;--Please select a country--&lt;/option&gt;
+    &lt;option value="us"&gt;United States&lt;/option&gt;
+    &lt;option value="ca"&gt;Canada&lt;/option&gt;
+    &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+    &lt;option value="au"&gt;Australia&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="select-output">
+                                <div class="card">
+                                    <label for="demo-country" style="display: block; margin-bottom: 5px;">Country:</label>
+                                    <select id="demo-country" name="country" style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 100%; max-width: 300px;">
+                                        <option value="">--Please select a country--</option>
+                                        <option value="us">United States</option>
+                                        <option value="ca">Canada</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="au">Australia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Form Validation</h2>
+                        <p>HTML5 provides built-in form validation features through attributes like <code>required</code>, <code>min</code>, <code>max</code>, <code>pattern</code>, etc. These allow basic validation to occur without JavaScript.</p>
+                        
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Common validation attributes include:</p>
+                                <ul>
+                                    <li><code>required</code> - Field must be filled out</li>
+                                    <li><code>min</code> and <code>max</code> - Minimum and maximum values for number inputs</li>
+                                    <li><code>minlength</code> and <code>maxlength</code> - Character limits for text inputs</li>
+                                    <li><code id="IntDemo">pattern</code> - Regular expression pattern the input must match</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Interactive Demo Form</h2>
+                        <p>Here's a complete form example that incorporates various input types and validation. Try submitting it without filling required fields to see validation in action.</p>
+                        <br>
+                        <div class="form-container">
+                            <form id="demo-form">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name:</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="password" class="form-label">Password:</label>
+                                    <input type="password" id="password" name="password" class="form-input" placeholder="Create a password">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="age" class="form-label">Age:</label>
+                                    <input type="number" id="age" name="age" class="form-input" min="18" max="120">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Interests:</label>
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="interest-html" name="interests[]" value="html">
+                                        <label for="interest-html" class="checkbox-label">HTML</label>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="interest-css" name="interests[]" value="css">
+                                        <label for="interest-css" class="checkbox-label">CSS</label>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="interest-js" name="interests[]" value="js">
+                                        <label for="interest-js" class="checkbox-label">JavaScript</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="form-label">Experience Level:</label>
+                                    <div class="radio-group">
+                                        <input type="radio" id="exp-beginner" name="experience" value="beginner" checked>
+                                        <label for="exp-beginner" class="radio-label">Beginner</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" id="exp-intermediate" name="experience" value="intermediate">
+                                        <label for="exp-intermediate" class="radio-label">Intermediate</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" id="exp-advanced" name="experience" value="advanced">
+                                        <label for="exp-advanced" class="radio-label">Advanced</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Comments:</label>
+                                    <textarea id="message" name="message" class="form-input" rows="4" placeholder="Any questions or comments?"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <button type="submit" class="btn">Submit Form</button>
+                                    <button type="reset" class="btn btn-secondary">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-content">
+                                <p><strong>Note:</strong> This demo form is for learning purposes only. No data is actually sent when you click submit. The validation is handled by JavaScript in our demo to enhance the user experience.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <div class="module-nav">
+                        <a href="lists_tables.html" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Previous: Lists & Tables</a>
+                        <a href="resources.html" class="btn">Next: Resources <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <h3 class="sidebar-title">In This Module</h3>
+                    <ul>
+                        <li><a href="#Understand" class="active">Understanding HTML Forms</a></li>
+                        <li><a href="#Basic">Basic Form Structure</a></li>
+                        <li><a href="#InputElem">Input Elements</a></li>
+                        <li><a href="#FormV">Form Validation</a></li>
+                        <li><a href="#IntDemo">Interactive Demo</a></li>
+                    </ul>
+                    
+                    <h3 class="sidebar-title">Learning Path</h3>
+                    <ul>
+                        <li><a href="intro.html">Introduction to HTML</a></li>
+                        <li><a href="tags.html">Basic HTML Tags</a></li>
+                        <li><a href="lists_tables.html">Lists & Tables</a></li>
+                        <li><a href="forms.html">Simple Forms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">
+                <p>Learn HTML fundamentals the right way</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/aster638" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishiyer638" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HTML Horizon. A project created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

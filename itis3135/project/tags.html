@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Tags | HTML Horizon</title>
+    <meta name="description" content="Learn about essential HTML tags for headings, paragraphs, links, images, and emphasis.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="HTML Horizon Logo">
+                <h1>HTML Horizon</h1>
+            </div>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">Introduction</a></li>
+                    <li><a href="tags.html" class="active">Basic Tags</a></li>
+                    <li><a href="lists_tables.html">Lists & Tables</a></li>
+                    <li><a href="forms.html">Simple Forms</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Basic HTML Tags</h1>
+            
+            <div class="module-content">
+                <div class="main-content">
+                    <section class="section">
+                        <h2 class="section-title">Headings</h2>
+                        <p>
+                            HTML provides six levels of headings, from <code>&lt;h1&gt;</code> (the most important) to <code>&lt;h6&gt;</code> 
+                            (the least important). Headings help structure your content, making it easier to read and navigate.
+                        </p>
+                        
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="headings-code">HTML</div>
+                                <div class="code-tab" data-panel="headings-result">Result</div>
+                            </div>
+                            <div class="code-panel active" id="headings-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;h1&gt;This is a Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is a Heading 2&lt;/h2&gt;
+&lt;h3&gt;This is a Heading 3&lt;/h3&gt;
+&lt;h4&gt;This is a Heading 4&lt;/h4&gt;
+&lt;h5&gt;This is a Heading 5&lt;/h5&gt;
+&lt;h6&gt;This is a Heading 6&lt;/h6&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="headings-result">
+                                <h1>This is a Heading 1</h1>
+                                <h2>This is a Heading 2</h2>
+                                <h3>This is a Heading 3</h3>
+                                <h4>This is a Heading 4</h4>
+                                <h5>This is a Heading 5</h5>
+                                <h6>This is a Heading 6</h6>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Best Practices for Headings</h3>
+                            <div class="card-content">
+                                <ul>
+                                    <li>Use <code>&lt;h1&gt;</code> for the main title of the page (typically only one per page)</li>
+                                    <li>Structure your headings hierarchically (don't skip levels, like going from <code>&lt;h2&gt;</code> to <code>&lt;h4&gt;</code>)</li>
+                                    <li>Use headings to create a logical outline of your content</li>
+                                    <li id="PARA">Headings are important for accessibility and SEO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Paragraphs</h2>
+                        <p>
+                            The <code>&lt;p&gt;</code> element defines a paragraph. Browsers automatically add margin space before and after 
+                            each paragraph.
+                        </p>
+                        
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="paragraphs-code">HTML</div>
+                                <div class="code-tab" data-panel="paragraphs-result">Result</div>
+                            </div>
+                            <div class="code-panel active" id="paragraphs-code">
+                                <div class="code-example">
+                                    <pre><code id="LINK">&lt;p&gt;This is the first paragraph. HTML automatically adds space before and after this element.&lt;/p&gt;
+&lt;p&gt;This is the second paragraph. Notice how it starts on a new line with space above it.&lt;/p&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="paragraphs-result">
+                                <p>This is the first paragraph. HTML automatically adds space before and after this element.</p>
+                                <p>This is the second paragraph. Notice how it starts on a new line with space above it.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Links</h2>
+                        <p>
+                            The <code>&lt;a&gt;</code> (anchor) element creates hyperlinks to other web pages, files, locations within the 
+                            same page, email addresses, or any other URL.
+                        </p>
+                        
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="links-code">HTML</div>
+                                <div class="code-tab" data-panel="links-result">Result</div>
+                            </div>
+                            <div class="code-panel active" id="links-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;!-- Link to another website --&gt;
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+
+&lt;!-- Link to another page in the same website --&gt;
+&lt;a href="intro.html"&gt;Go to Introduction&lt;/a&gt;
+
+&lt;!-- Link to a specific section on the same page --&gt;
+&lt;a href="#images"&gt;Jump to Images section&lt;/a&gt;
+
+&lt;!-- Link with target attribute to open in a new tab --&gt;
+&lt;a href="https://www.example.com" target="_blank"&gt;Open in new tab&lt;/a&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="links-result">
+                                <p><a href="https://www.example.com">Visit Example.com</a></p>
+                                
+                                <p><a href="intro.html">Go to Introduction</a></p>
+                                
+                                <p><a href="#IMAGE">Jump to Images section</a></p>
+                                
+                                <p><a href="https://www.example.com" target="_blank">Open in new tab</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Important Link Attributes</h3>
+                            <div class="card-content">
+                                <ul>
+                                    <li><code>href</code>: Specifies the URL or destination of the link</li>
+                                    <li><code>target</code>: Specifies where to open the linked document (e.g., <code>_blank</code> opens in a new tab)</li>
+                                    <li><code>title</code>: Provides additional information about the link (shown as a tooltip)</li>
+                                    <li><code id="IMAGE">rel</code>: Specifies the relationship between the current document and the linked document</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="images" class="section">
+                        <h2 class="section-title">Images</h2>
+                        <p>
+                            The <code>&lt;img&gt;</code> element embeds an image into the web page. It is an empty (self-closing) element, 
+                            meaning it doesn't have a closing tag.
+                        </p>
+                        
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="images-code">HTML</div>
+                                <div class="code-tab" data-panel="images-result">Result</div>
+                            </div>
+                            <div class="code-panel active" id="images-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;!-- Basic image --&gt;
+&lt;img src="https://via.placeholder.com/300x200" alt="A placeholder image"&gt;
+
+&lt;!-- Image with width and height attributes --&gt;
+&lt;img src="https://via.placeholder.com/150" alt="Small placeholder" width="150" height="150"&gt;
+
+&lt;!-- Image with a title (tooltip) --&gt;
+&lt;img src="https://via.placeholder.com/200x100" alt="Wide placeholder" title="This is a tooltip"&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="images-result">
+                                <img src="images/placeholder.png" alt="A placeholder image"><br><br>
+                                
+                                <img src="images/placeholder.png" alt="Small placeholder" width="150" height="150"><br><br>
+                                
+                                <img src="images/placeholder.png" alt="Wide placeholder" width="150" height="150" title="This is a tooltip">
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Required Attributes for Images</h3>
+                            <div class="card-content">
+                                <ul>
+                                    <li><code>src</code>: Specifies the path to the image file</li>
+                                    <li><code id="TEXTF">alt</code>: Provides alternative text for the image (for accessibility and if the image cannot be displayed)</li>
+                                </ul>
+                                <p>
+                                    The <code>alt</code> attribute is crucial for accessibility, helping screen readers describe the image to 
+                                    visually impaired users. It's also displayed if the image fails to load.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">Text Formatting</h2>
+                        <p>
+                            HTML provides several elements for formatting text to emphasize or highlight content.
+                        </p>
+                        
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="formatting-code">HTML</div>
+                                <div class="code-tab" data-panel="formatting-result">Result</div>
+                            </div>
+                            <div class="code-panel active" id="formatting-code">
+                                <div class="code-example">
+                                    <pre><code>&lt;!-- Strong importance --&gt;
+&lt;p&gt;This is &lt;strong&gt;very important&lt;/strong&gt; text.&lt;/p&gt;
+
+&lt;!-- Emphasized text --&gt;
+&lt;p&gt;This is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;
+
+&lt;!-- Marked/highlighted text --&gt;
+&lt;p&gt;This is &lt;mark&gt;highlighted&lt;/mark&gt; text.&lt;/p&gt;
+
+&lt;!-- Subscript text --&gt;
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O is the chemical formula for water.&lt;/p&gt;
+
+&lt;!-- Superscript text --&gt;
+&lt;p&gt;2&lt;sup&gt;3&lt;/sup&gt; equals 8.&lt;/p&gt;
+
+&lt;!-- Code --&gt;
+&lt;p&gt;The &lt;code&gt;print()&lt;/code&gt; function outputs text.&lt;/p&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="formatting-result">
+                                <p>This is <strong>very important</strong> text.</p>
+                                
+                                <p>This is <em>emphasized</em> text.</p>
+                                
+                                <p>This is <mark>highlighted</mark> text.</p>
+                                
+                                <p>H<sub>2</sub>O is the chemical formula for water.</p>
+                                
+                                <p>2<sup>3</sup> equals 8.</p>
+                                
+                                <p>The <code>print()</code> function outputs text.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">Semantic vs. Presentational Markup</h3>
+                            <div class="card-content">
+                                <p>
+                                    It's important to use HTML elements for their semantic meaning, not just for their visual effect. For example:
+                                </p>
+                                <ul>
+                                    <li>Use <code>&lt;strong&gt;</code> for strong importance, not just to make text bold</li>
+                                    <li>Use <code>&lt;em&gt;</code> for emphasis, not just to make text italic</li>
+                                </ul>
+                                <p>
+                                    This distinction matters for accessibility and helps browsers, search engines, and other technologies understand your content better.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="module-nav">
+                        <a href="intro.html" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Previous: Introduction
+                        </a>
+                        <a href="lists_tables.html" class="btn">
+                            Next: Lists & Tables <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <aside class="sidebar">
+                    <h3 class="sidebar-title">In This Module</h3>
+                    <ul>
+                        <li><a href="#HEADING" class="active">Headings</a></li>
+                        <li><a href="#PARA">Paragraphs</a></li>
+                        <li><a href="#LINK">Links</a></li>
+                        <li><a href="#IMAGE">Images</a></li>
+                        <li><a href="#TEXTF">Text Formatting</a></li>
+                    </ul>
+                    
+                    <h3 class="sidebar-title">Learning Path</h3>
+                    <ul>
+                        <li><a href="intro.html">Introduction to HTML</a></li>
+                        <li><a href="tags.html">Basic Tags</a></li>
+                        <li><a href="lists_tables.html">Lists & Tables</a></li>
+                        <li><a href="forms.html">Simple Forms</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">
+                <p>Learn HTML fundamentals the right way</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/aster638" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishiyer638" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HTML Horizon. A project created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

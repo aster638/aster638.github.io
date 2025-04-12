@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - HTML Horizon</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="HTML Horizon Logo">
+                <h1>HTML Horizon</h1>
+            </div>
+            <nav>
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">Introduction</a></li>
+                    <li><a href="tags.html">Basic Tags</a></li>
+                    <li><a href="lists_tables.html">Lists & Tables</a></li>
+                    <li><a href="forms.html">Simple Forms</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1 class="page-title">Additional Resources</h1>
+            
+            <section class="section">
+                <h2 class="section-title">Helpful Learning Resources</h2>
+                <p>Continue your HTML journey with these carefully selected resources to deepen your knowledge and skills.</p>
+                <br>
+                <div class="resources-grid">
+                    <!-- MDN Web Docs -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">MDN Web Docs</h3>
+                        <p>Mozilla's comprehensive documentation for web technologies, including detailed HTML guides and references.</p>
+                        <div class="card-content">
+                            <span class="tag">Official Documentation</span>
+                            <span class="tag">Reference</span>
+                            <span class="tag">Interactive Examples</span>
+                        </div>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    
+                    <!-- W3Schools -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">W3Schools HTML Tutorial</h3>
+                        <p>Beginner-friendly tutorials with simple examples and "Try it Yourself" editors for hands-on practice.</p>
+                        <div class="card-content">
+                            <span class="tag">Tutorial</span>
+                            <span class="tag">Interactive</span>
+                            <span class="tag">Examples</span>
+                        </div>
+                        <a href="https://www.w3schools.com/html/" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    
+                    <!-- W3C HTML Validator -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">W3C HTML Validator</h3>
+                        <p>Official validator to check your HTML code for errors and ensure it follows web standards.</p>
+                        <div class="card-content">
+                            <span class="tag">Tool</span>
+                            <span class="tag">Validation</span>
+                            <span class="tag">Standards</span>
+                        </div>
+                        <a href="https://validator.w3.org/" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    
+                    <!-- HTML5 Doctor -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">HTML5 Doctor</h3>
+                        <p>Articles and resources focused on semantic HTML5 elements and best practices for modern web development.</p>
+                        <div class="card-content">
+                            <span class="tag">Articles</span>
+                            <span class="tag">Semantic HTML</span>
+                            <span class="tag">Best Practices</span>
+                        </div>
+                        <a href="http://html5doctor.com/" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    
+                    <!-- CSS-Tricks -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">CSS-Tricks</h3>
+                        <p>While focused on CSS, contains excellent articles on HTML structure and how it works with styling.</p>
+                        <div class="card-content">
+                            <span class="tag">Articles</span>
+                            <span class="tag">Tips</span>
+                            <span class="tag">HTML & CSS</span>
+                        </div>
+                        <a href="https://css-tricks.com/snippets/html/" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    
+                    <!-- FreeCodeCamp -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">FreeCodeCamp</h3>
+                        <p>Free, interactive curriculum with challenges and projects to learn HTML and web development.</p>
+                        <div class="card-content">
+                            <span class="tag">Interactive Course</span>
+                            <span class="tag">Projects</span>
+                            <span class="tag">Free</span>
+                        </div>
+                        <a href="https://www.freecodecamp.org/learn/responsive-web-design/" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">HTML Glossary</h2>
+                <p>A quick reference guide to common HTML terms and definitions. Click on each term to expand its definition.</p>
+                
+                <!-- Glossary content will be loaded here via JavaScript -->
+                <div id="glossary-container">
+                    <div class="card">
+                        <p>Loading glossary data...</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <h2 class="section-title">Tools & Editors</h2>
+                <p>Helpful tools to make your HTML development process smoother and more efficient.</p><br>
+                
+                <div class="resources-grid">
+                    <!-- VS Code -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">Visual Studio Code</h3>
+                        <p>A popular, free code editor with excellent HTML support, extensions, and live preview capabilities.</p>
+                        <div class="card-content">
+                            <span class="tag">Editor</span>
+                            <span class="tag">Free</span>
+                            <span class="tag">Extensions</span>
+                        </div>
+                        <a href="https://code.visualstudio.com/" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    
+                    <!-- CodePen -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">CodePen</h3>
+                        <p>Online code editor for quick prototyping and sharing HTML, CSS, and JavaScript examples.</p>
+                        <div class="card-content">
+                            <span class="tag">Online Editor</span>
+                            <span class="tag">Community</span>
+                            <span class="tag">Examples</span>
+                        </div>
+                        <a href="https://codepen.io/" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    
+                    <!-- Can I Use -->
+                    <div class="resource-card">
+                        <h3 class="resource-title">Can I Use</h3>
+                        <p>Check browser compatibility for HTML features to ensure your code works across different platforms.</p>
+                        <div class="card-content">
+                            <span class="tag">Compatibility</span>
+                            <span class="tag">Reference</span>
+                            <span class="tag">Browser Support</span>
+                        </div>
+                        <a href="https://caniuse.com/" class="btn" target="_blank">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">
+                <p>Learn HTML fundamentals the right way</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/aster638" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishiyer638" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HTML Horizon. A project created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

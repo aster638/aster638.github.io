@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML | HTML Horizon</title>
+    <meta name="description" content="Learn the basics of HTML, its purpose, and the fundamental structure of HTML documents.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="HTML Horizon Logo">
+                <h1>HTML Horizon</h1>
+            </div>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html" class="active">Introduction</a></li>
+                    <li><a href="tags.html">Basic Tags</a></li>
+                    <li><a href="lists_tables.html">Lists & Tables</a></li>
+                    <li><a href="forms.html">Simple Forms</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Introduction to HTML</h1>
+            
+            <div class="module-content">
+                <div class="main-content">
+                    <section class="section">
+                        <h2 class="section-title">What is HTML?</h2>
+                        <p>
+                            <strong>HTML</strong> (HyperText Markup Language) is the standard markup language used to create web pages. 
+                            It's the foundation of all websites and describes the structure of a web page. HTML consists of a series of 
+                            elements that tell the browser how to display content.
+                        </p>
+                        <p>
+                            HTML was created by Tim Berners-Lee in 1991, and it has gone through many versions since then. The current 
+                            standard is HTML5, which introduced many new features and improvements over previous versions.
+                        </p>
+                        <p id="HTML_DOC">
+                            HTML is not a programming language; it's a markup language that defines the structure of your content. 
+                            It uses tags to define elements within a document.
+                        </p>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">HTML Document Structure</h2>
+                        <p>
+                            Every HTML document follows a basic structure. Here's what a minimal HTML document looks like:
+                        </p>
+                        
+                        <div class="code-block">
+                            <div class="code-tabs">
+                                <div class="code-tab active" data-panel="code-1">HTML</div>
+                                <div class="code-tab" data-panel="result-1">Result</div>
+                            </div>
+                            <div class="code-panel active" id="code-1">
+                                <div class="code-example">
+                                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                                </div>
+                            </div>
+                            <div class="code-panel" id="result-1">
+                                <h1>Hello, World!</h1>
+                                <p>This is my first HTML page.</p>
+                            </div>
+                        </div>
+
+                        <p>Let's break down this structure:</p>
+                        <br>
+                        <div class="card">
+                            <h3 class="card-title">&lt;!DOCTYPE html&gt;</h3>
+                            <div class="card-content">
+                                <p>
+                                    The DOCTYPE declaration is not an HTML tag; it's an instruction to the web browser about what version 
+                                    of HTML the page is written in. The declaration <code>&lt;!DOCTYPE html&gt;</code> represents HTML5.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">&lt;html&gt; Element</h3>
+                            <div class="card-content">
+                                <p>
+                                    The <code>&lt;html&gt;</code> element is the root element of an HTML page. All other elements are contained 
+                                    within this element. The <code>lang</code> attribute specifies the language of the document.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">&lt;head&gt; Element</h3>
+                            <div class="card-content">
+                                <p>
+                                    The <code>&lt;head&gt;</code> element contains meta-information about the document, such as its title, character 
+                                    encoding, styles, scripts, and other metadata that isn't displayed directly on the web page.
+                                </p>
+                                <p>Important elements inside the head include:</p>
+                                <ul>
+                                    <li><code>&lt;meta&gt;</code>: Provides metadata about the HTML document</li>
+                                    <li><code>&lt;title&gt;</code>: Specifies the title of the document (shown in browser tab)</li>
+                                    <li><code>&lt;link&gt;</code>: Links to external resources, like CSS files</li>
+                                    <li><code>&lt;script&gt;</code>: Embeds or references JavaScript code</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="card-title">&lt;body&gt; Element</h3>
+                            <div class="card-content">
+                                <p id="ELEM">
+                                    The <code>&lt;body&gt;</code> element contains all the content that is displayed on the web page, such as 
+                                    text, images, links, tables, lists, etc.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section">
+                        <h2 class="section-title">HTML Elements, Tags, and Attributes</h2>
+                        
+                        <h3>Elements vs. Tags</h3>
+                        <p>
+                            An <strong>HTML element</strong> is defined by a start tag, some content, and an end tag. For example:
+                        </p>
+                        <div class="code-example">
+                            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                        </div>
+                        <p>
+                            In this example, <code>&lt;p&gt;</code> is the start tag, "This is a paragraph." is the content, and <code>&lt;/p&gt;</code> is 
+                            the end tag. Together, they form the HTML element.
+                        </p>
+                        
+                        <h3>Attributes</h3>
+                        <p>
+                            HTML attributes provide additional information about an element. They are always specified in the start tag 
+                            and usually come in name/value pairs like: <code>name="value"</code>.
+                        </p>
+                        <div class="code-example">
+                            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+                        </div>
+                        <p>
+                            In this example, <code>href</code> is an attribute of the <code>&lt;a&gt;</code> element, and its value is 
+                            "https://www.example.com".
+                        </p>
+                        
+                        <h3>Empty Elements</h3>
+                        <p>
+                            Some HTML elements have no content and don't need an end tag. These are called empty elements or self-closing elements.
+                        </p>
+                        <div class="code-example">
+                            <pre><code>&lt;img src="image.jpg" alt="Description of image"&gt;</code></pre>
+                        </div>
+                        <p>
+                            In HTML5, the trailing slash is optional for empty elements. Both <code>&lt;img src="image.jpg" alt="Description"&gt;</code> 
+                            and <code>&lt;img src="image.jpg" alt="Description" /&gt;</code> are acceptable.
+                        </p>
+                    </section>
+
+                    <div class="module-nav">
+                        <a href="index.html" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Back to Home
+                        </a>
+                        <a href="tags.html" class="btn">
+                            Next: Basic Tags <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <aside class="sidebar">
+                    <h3 class="sidebar-title">In This Module</h3>
+                    <ul>
+                        <li><a href="#" class="active">What is HTML?</a></li>
+                        <li><a href="#HTML_DOC">HTML Document Structure</a></li>
+                        <li><a href="#ELEM">Elements, Tags, and Attributes</a></li>
+                    </ul>
+                    
+                    <h3 class="sidebar-title">Learning Path</h3>
+                    <ul>
+                        <li><a href="intro.html">Introduction to HTML</a></li>
+                        <li><a href="tags.html">Basic Tags</a></li>
+                        <li><a href="lists_tables.html">Lists & Tables</a></li>
+                        <li><a href="forms.html">Simple Forms</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">
+                <p>Learn HTML fundamentals the right way</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/aster638" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishiyer638" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 HTML Horizon. A project created for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
