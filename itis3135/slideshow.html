@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Iyer's King-sized Inchworm || ITIS 3135 || Slideshow</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header class="title-name">
+        <div data-include="components/header.html"></div>
+    </header>
+    <div class="gold-line"></div>
+    
+    <main>
+        <h2>ITIS 3135 Name Slideshow</h2>
+        <p>A slideshow gallery featuring items that start with each letter in my name: Krish Iyer</p>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 9</div>
+                <img src="images/slideshow/k-kite.jpeg" alt="Kite">
+                <div class="caption">K - for Kite (1st letter in Krish)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 9</div>
+                <img src="images/slideshow/r-rainbow.jpeg" alt="Rainbow">
+                <div class="caption">R - for Rainbow (2nd letter in Krish)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 9</div>
+                <img src="images/slideshow/i-icecream.jpeg" alt="Ice Cream">
+                <div class="caption">I - for Ice Cream (3rd letter in Krish)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 9</div>
+                <img src="images/slideshow/s-sunflower.jpeg" alt="Sunflower">
+                <div class="caption">S - for Sunflower (4th letter in Krish)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 9</div>
+                <img src="images/slideshow/h-hat.jpeg" alt="Hat">
+                <div class="caption">H - for Hat (5th letter in Krish)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 9</div>
+                <img src="images/slideshow/i-igloo.jpeg" alt="Igloo">
+                <div class="caption">I - for Igloo (1st letter in Iyer)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 9</div>
+                <img src="images/slideshow/y-yacht.jpeg" alt="Yacht">
+                <div class="caption">Y - for Yacht (2nd letter in Iyer)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 9</div>
+                <img src="images/slideshow/e-egg.jpeg" alt="Egg">
+                <div class="caption">E - for Egg (3rd letter in Iyer)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 9</div>
+                <img src="images/slideshow/r-rose.jpeg" alt="Rose">
+                <div class="caption">R - for Rose (4th letter in Iyer)</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/k-kite.jpeg" onclick="currentSlide(1)" alt="K - Kite">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/r-rainbow.jpeg" onclick="currentSlide(2)" alt="R - Rainbow">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/i-icecream.jpeg" onclick="currentSlide(3)" alt="I - Ice Cream">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/s-sunflower.jpeg" onclick="currentSlide(4)" alt="S - Sunflower">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/h-hat.jpeg" onclick="currentSlide(5)" alt="H - Hat">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/i-igloo.jpeg" onclick="currentSlide(6)" alt="I - Igloo">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/y-yacht.jpeg" onclick="currentSlide(7)" alt="Y - Yacht">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/e-egg.jpeg" onclick="currentSlide(8)" alt="E - Egg">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/slideshow/r-rose.jpeg" onclick="currentSlide(9)" alt="R - Rose">
+            </div>
+        </div>
+
+        <h3>AI Image Generation Details</h3>
+        <ul class="bullets">
+            <li>All images were generated using DALL-E 3</li>
+            <li>Prompt for K: "A colorful kite flying in a clear blue sky, landscape orientation"</li>
+            <li>Prompt for R: "A beautiful rainbow over a green field, landscape orientation"</li>
+            <li>Prompt for I: "A delicious ice cream cone with multiple scoops, landscape orientation"</li>
+            <li>Prompt for S: "A bright yellow sunflower in a field, landscape orientation"</li>
+            <li>Prompt for H: "A stylish hat on a wooden table, landscape orientation"</li>
+            <li>Prompt for I: "A snow igloo in a winter landscape, landscape orientation"</li>
+            <li>Prompt for Y: "A luxury yacht on calm blue water, landscape orientation"</li>
+            <li>Prompt for E: "A white egg on a wooden surface, landscape orientation"</li>
+            <li>Prompt for R: "A beautiful red rose with green leaves, landscape orientation"</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>
