@@ -653,3 +653,15 @@ figcaption {
         width: calc(100% / 2);
     }
 }
+
+.review-image {
+    width: 100%;
+}
+
+.review-link {
+    color: #B3A369;
+}
+
+.review-link:hover {
+    color: white;
+}
