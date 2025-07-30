@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Real World Map</title>
+    <title>Interactive World Map</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
     <link rel="stylesheet" href = "styles.css">
@@ -15,20 +15,18 @@
                 <div class="spinner"></div>
                 Loading world map...
             </div>
+            <svg id="map"></svg>
             <button class="reset-btn" onclick="resetView()" style="display: none;">Reset View</button>
             <div class="zoom-controls" style="display: none;">
                 <button class="zoom-btn" onclick="zoomIn()">+</button>
                 <button class="zoom-btn" onclick="zoomOut()">−</button>
             </div>
-            <svg id="map"></svg>
         </div>
-        
         <div class="info-panel">
             <div id="country-info">
                 <h2>🌍 Interactive World Map</h2>
                 <div class="welcome-message">
-                    <p>Loading real world map data...</p>
-                    <p>Click on any country to explore!</p>
+                    <p>Loading map data...</p>
                 </div>
             </div>
         </div>
